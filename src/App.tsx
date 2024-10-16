@@ -5,12 +5,14 @@ import {Main} from "./layout/sections/main/Main";
 
 
 function App() {
-    return (
-        <div className="App">
+   return (
+      <StyledDiv className="App">
+         <StyledSection>
             <Header/>
-           <Main/>
-        </div>
-    );
+            <Main/>
+         </StyledSection>
+      </StyledDiv>
+   );
 }
 
 export default App;
@@ -20,3 +22,15 @@ const Title = styled.h1`
     text-align: center;
     color: #e91e63;
 `;
+
+const StyledSection = styled.section`
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+`
+const StyledDiv=styled.div `
+    display: flex;
+    justify-content: center;
+`

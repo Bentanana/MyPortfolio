@@ -20,5 +20,5 @@ const StyledHeader = styled.header`
     
     background-color: #ffffff;
     justify-content: space-between;
-    width: 1000px;
+  //  width: 1000px;
 `

@@ -2,6 +2,7 @@ import './App.css';
 import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
+import {Skills} from "./layout/sections/skills/Skills";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
          <StyledSection>
             <Header/>
             <Main/>
+            <Skills/>
          </StyledSection>
       </StyledDiv>
    );
@@ -30,7 +32,7 @@ const StyledSection = styled.section`
     flex-direction: column;
 
 `
-const StyledDiv=styled.div `
+const StyledDiv=styled.section `
     display: flex;
     justify-content: center;
 `

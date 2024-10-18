@@ -5,9 +5,9 @@ export const Menu = () => {
    return (
       <StyledMenu>
          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contacts</a></li>
+            <StyledLi><a href="">About</a></StyledLi>
+            <StyledLi><a href="">Projects</a></StyledLi>
+            <StyledLi><a href="">Contacts</a></StyledLi>
 
          </ul>
 
@@ -22,3 +22,6 @@ const StyledMenu = styled.nav`
    }
    
 `
+const StyledLi=styled.li`
+list-style:none;
+   `

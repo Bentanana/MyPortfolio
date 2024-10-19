@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
 import {Skills} from "./layout/sections/skills/Skills";
+import {Projects} from "./layout/sections/projects/Projects";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
+            <Projects/>
          </StyledSection>
       </StyledDiv>
    );
@@ -26,7 +28,7 @@ const Title = styled.h1`
 `;
 
 const StyledSection = styled.section`
-    max-width: 800px;
+  //  max-width: 800px;
     display: flex;
     justify-content: center;
     flex-direction: column;

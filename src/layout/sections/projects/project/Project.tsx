@@ -6,10 +6,10 @@ type ProjectProps = {
    title?: string;
    description?: string;
    src?: string;
-   position?:  "left" | "right";
+   position?: "left" | "right";
 }
 export const Project = (props: ProjectProps) => {
-   if (props.position==="left") {
+   if (props.position === "left") {
       return (
          <StyledProject>
             <StyledLeft>
@@ -19,8 +19,9 @@ export const Project = (props: ProjectProps) => {
             </StyledLeft>
             <Img position={"left"} src={props.src} alt=""/>
          </StyledProject>
+
       );
-   }else {
+   } else {
       return (
 
          <StyledProject>
@@ -48,7 +49,7 @@ const StyledProject = styled.div`
     margin: 40px;
     box-shadow: 5px 10px 10px #dcdcdc;
 `
-const StyledLeft=styled.div`
+const StyledLeft = styled.div`
     //max-width: 540px;
     width: 496px;
     margin-left: 20px;
@@ -57,7 +58,7 @@ const StyledLeft=styled.div`
 const Title = styled.h3`
 `
 const Description = styled.p`
-   color: #969596;
+    color: #969596;
 `
 const Img = styled.img <ProjectProps>`
     //496x526
@@ -67,10 +68,10 @@ const Img = styled.img <ProjectProps>`
 
     ${props => props.position === "left" && css<ProjectProps>
             `border-bottom-right-radius: 30px;
-                border-top-right-radius: 30px`};
+             border-top-right-radius: 30px`};
     ${props => props.position === "right" && css<ProjectProps>
             `border-bottom-left-radius: 30px;
-                border-top-left-radius: 30px`};
+             border-top-left-radius: 30px`};
 `
 const Button = styled.button`
 `

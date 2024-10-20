@@ -31,8 +31,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    background-color: #F9FAFF;
-    //width: 992px;
-    //height: 524px;
 `
 

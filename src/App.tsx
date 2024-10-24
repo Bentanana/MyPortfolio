@@ -5,6 +5,9 @@ import {Main} from "./layout/sections/main/Main";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Projects} from "./layout/sections/projects/Projects";
 import {Contact} from "./layout/sections/contact/Contact";
+import {Testimonials} from "./layout/sections/testimonials/Testimonials";
+import {theme} from "./styles/Theme";
+import {Experience} from "./layout/sections/experience/Experience";
 
 
 function App() {
@@ -12,11 +15,14 @@ function App() {
       <StyledDiv className="App">
          <StyledSection>
 
-            <Header/>
+            <Header />
             <Main/>
             <Skills/>
+            <Experience/>
             <Projects/>
+            <Testimonials/>
             <Contact/>
+
          </StyledSection>
       </StyledDiv>
    );
@@ -24,11 +30,7 @@ function App() {
 
 export default App;
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
-`;
+
 
 const StyledSection = styled.section`
   //  max-width: 800px;
@@ -40,5 +42,5 @@ const StyledSection = styled.section`
 const StyledDiv=styled.section `
     display: flex;
     justify-content: center;
-    background-color:  #F9FAFF;
+    background-color:  ${theme.colors.primaryBg};
 `

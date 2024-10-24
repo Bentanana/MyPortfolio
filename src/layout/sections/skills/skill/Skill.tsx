@@ -17,6 +17,10 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill=styled.div `
-    width: 14%;
-    padding: 10px;
+    width: 16%;
+    max-width: 80px;
+    padding: 15px 0;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    
 `

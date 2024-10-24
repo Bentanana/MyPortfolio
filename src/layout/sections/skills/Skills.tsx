@@ -3,30 +3,34 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
+import {Container} from "../../../components/Container";
 
 
 export const Skills = () => {
    return (
       <StyledSkills>
+         <Container>
+            <FlexWrapper direction={"column"} align={"center"}>
+               <SectionTitle>Skills</SectionTitle>
+            </FlexWrapper>
 
-         <SectionTitle>Skills</SectionTitle>
+               <FlexWrapper wrap={"wrap"} justifyContent={"center"}>
 
-         <FlexWrapper wrap={"wrap"} justifyContent={"space-between"} align={"space-between"} >
+                  <Skill iconId={"vscode"}/>
+                  <Skill iconId={"js"}/>
+                  <Skill iconId={"css"}/>
+                  <Skill iconId={"html"}/>
+                  <Skill iconId={"greensock"}/>
+                  <Skill iconId={"vector"}/>
+                  <Skill iconId={"github"}/>
+                  <Skill iconId={"git"}/>
+                  <Skill iconId={"react"}/>
+                  <Skill iconId={"sass"}/>
+                  <Skill iconId={"bootstrap"}/>
+                  <Skill iconId={"tw"}/>
 
-            <Skill iconId={"vscode"}/>
-            <Skill iconId={"js"}/>
-            <Skill iconId={"css"}/>
-            <Skill iconId={"html"}/>
-            <Skill iconId={"greensock"}/>
-            <Skill iconId={"vector"}/>
-            <Skill iconId={"github"}/>
-            <Skill iconId={"git"}/>
-            <Skill iconId={"react"}/>
-            <Skill iconId={"sass"}/>
-            <Skill iconId={"bootstrap"}/>
-            <Skill iconId={"tw"}/>
-
-         </FlexWrapper>
+               </FlexWrapper>
+         </Container>
       </StyledSkills>
    );
 
@@ -34,9 +38,5 @@ export const Skills = () => {
 
 
 const StyledSkills = styled.section`
-   
-    //min-height: 100vh;
-    //width: 1200px;
-    height: 519px;
-    background-color: #F9FAFF;
+    min-height: 40vh;
 `

@@ -41,13 +41,13 @@ export const Project = (props: ProjectProps) => {
 
 const StyledProject = styled.div`
     background-color: #ffffff;
-    // max-width: 540px;
-    width: 992px;
-    height: 524px;
+    width: 100%;
+    max-width: 992px;
+    max-height: 524px;
     display: flex;
     border-radius: 30px;
     margin: 40px;
-    box-shadow: 5px 10px 10px #dcdcdc;
+    box-shadow: 5px 10px 10px #eae9e9;
 `
 const StyledLeft = styled.div`
     //max-width: 540px;

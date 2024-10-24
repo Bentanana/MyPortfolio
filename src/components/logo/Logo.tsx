@@ -1,15 +1,16 @@
 import React from 'react';
 import {Icon} from "../icon/Icons";
 import styled from "styled-components";
-
+import { IoHome } from "react-icons/io5";
+import {theme} from "../../styles/Theme";
 
 export const Logo = () => {
    return (
       <LogoStyled>
-         <a href="">
-            <Icon iconId={'logo'} width={"50"} height={"50"} viewBox={"0 0 60 60"}/>
-         </a>
-         <p>Tatyana Benevolskaya</p>
+         <Link href="" title={"Home"}>
+            <IoHome size={"40px"} fill={"#FDC435"}/>
+         </Link>
+         <Name>Vahid Navazan</Name>
       </LogoStyled>
    );
 };
@@ -18,4 +19,14 @@ const LogoStyled = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 20px;
+`
+const Link=styled.a``
+
+const Name=styled.span`
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+
 `
